@@ -1,0 +1,13 @@
+[project]
+name = "openai-agents-lesson-3"
+version = "0.1.0"
+description = "Lesson 3: External API Integration with OpenAI Agents"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "openai",
+    "openai-agents",
+    "python-dotenv",
+    "beautifulsoup4",
+    "requests",
+]
