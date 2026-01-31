@@ -1,0 +1,6 @@
+--extra-index-url https://pypi.fury.io/ericmichael/
+
+# Core dependencies
+omniagents[all]>=0.6.2
+ipywidgets>=7.6.0
+notebook>=7.0.0

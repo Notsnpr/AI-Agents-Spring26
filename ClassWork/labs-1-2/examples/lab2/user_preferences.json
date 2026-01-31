@@ -1,0 +1,15 @@
+{
+  "dietType": "flexitarian",
+  "allergies": ["peanuts"],
+  "intolerances": ["lactose"],
+  "religiousRestrictions": [],
+  "dislikedFoods": ["mushrooms", "olives"],
+  "healthGoals": ["high protein", "balanced calories"],
+  "mealsPerDay": 4,
+  "cuisinePreferences": ["mexican", "italian", "mediterranean"],
+  "spiceTolerance": "medium",
+  "budgetLevel": "low",
+  "cookingSkill": "beginner",
+  "timeConstraintMinutes": 30,
+  "notes": "Prefers quick, simple meals"
+}
