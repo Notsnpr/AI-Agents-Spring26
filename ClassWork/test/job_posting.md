@@ -1,22 +1,18 @@
-# Job Posting (1)
+# Job posting (best single match)
 
-## Bluejay — Software Engineer Intern
-**Location:** San Francisco, CA, US  
-**Comp:** $5.2K – $10.4K / month  
-**Job page:** https://www.ycombinator.com/companies/bluejay/jobs/jaE0uqb-software-engineer-intern  
-**Company:** https://getbluejay.ai/
+## Twilio — Software Engineer Intern (Remote - US)
+**Link:** https://job-boards.greenhouse.io/twilio/jobs/7560246
 
 ### Why this is a strong fit for Victor Muñoz
-- **Alignment with your interests:** Bluejay sits directly in the *AI/ML + real product* space (testing/QA for voice & text AI), matching your interest in AI-focused roles.
-- **Full-stack/product building:** Early-stage YC startup environment means you’ll likely ship end-to-end features—good for your background in **React/Firebase** (JobSync) and building an MVP (FreightLink).
-- **Engineering culture fit:** The role emphasizes building trustworthy systems (quality, safety), which pairs well with your **Information Security Apprentice** experience (monitoring logs, audits).
-- **Growth & mentorship signal:** Tiny team (very early) implies high ownership and direct founder collaboration—fits your desire for steep learning and mentorship.
+- **Matches your target roles & location preferences:** It’s a **Software Engineer Intern** role and is **remote (US)**, aligning with your preference for hybrid/remote and low travel.
+- **Direct skills alignment:** The posting explicitly values experience in **Python, JavaScript, Go, C/C++**—you list **Python, C++, JavaScript** and have strong CS fundamentals (DSA, Software Engineering).
+- **Demonstrated product-building & AI interest:** Your **JobSync** project (React + Firebase + Gemini API) and **FreightLink** (MVP + experimental AI chat) map well to Twilio’s focus on building production features and scaling systems.
+- **Growth/mentorship culture:** The role emphasizes learning fast, code reviews, shipping projects—fits your stated desire for mentorship and high engineering standards.
 
-### Interviewer question prompts (tailored to Victor)
-<!--
-1) You built JobSync with React + Firebase + Gemini API in 24 hours. Walk me through one hard technical tradeoff you made (data model, auth, latency, or API design) and what you’d improve with more time.
-2) Bluejay focuses on testing conversational AI. How would you design an automated test harness for a voice agent? What would you log/measure (latency, hallucination rate, safety failures, retries)?
-3) Tell me about your Information Security Apprentice work. How would you apply a security mindset to an AI testing platform handling customer transcripts/audio?
-4) Describe a time you worked with ambiguity (e.g., FreightLink MVP). How did you choose what to build first and how did you validate it?
-5) What’s a recent project where you used Git effectively (branching, PR reviews, code quality)? How do you ensure maintainability in a fast-moving team?
--->
+### Interviewer question ideas (tailored to Victor + this posting)
+- Your JobSync was built in 24 hours—what tradeoffs did you make around **architecture, data model (Firebase), and reliability**?
+- Twilio mentions **distributed systems, resiliency, and latency**. Describe a time you had to optimize performance or reduce latency in a project (even if small-scale). What would you do differently at larger scale?
+- Walk through a feature you shipped end-to-end (e.g., resume-to-job matching with Gemini). How did you handle **prompting, evaluation, and failure cases**?
+- What testing practices have you used (unit/integration)? If minimal so far, how would you add **tests + CI** to FreightLink or JobSync?
+- Twilio values source control and agile habits—describe your **Git workflow**, how you review PRs (or would), and how you break work into deliverable increments.
+- Your InfoSec apprentice experience: how would that influence how you design/operate a service handling user data (logs, access controls, secrets)?
