@@ -1,0 +1,156 @@
+:root{
+  --bg:#05040a;
+  --screen:#081018;
+  --neon:#42f5ff;
+  --neon2:#ff42f0;
+  --neon3:#ffe84a;
+  --text:#e8f6ff;
+  --muted:#9ad6ff;
+  --danger:#ff3b6b;
+  --ok:#59ffa4;
+  --shadow: rgba(0,0,0,0.55);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 50% 30%, #150b2a 0%, var(--bg) 55%, #020106 100%);
+}
+
+*{box-sizing:border-box}
+
+html,body,#root{height:100%}
+body{margin:0}
+
+.ff-root{
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  outline:none;
+}
+
+.ff-cabinet{
+  width:min(920px, 96vw);
+  border-radius:18px;
+  padding:18px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)),
+    linear-gradient(180deg, #111 0%, #050505 100%);
+  box-shadow:
+    0 28px 80px var(--shadow),
+    0 0 0 2px rgba(255,255,255,0.06),
+    0 0 60px rgba(66,245,255,0.14);
+}
+
+.ff-header{padding:10px 10px 14px}
+.ff-marquee{
+  border-radius:12px;
+  padding:14px 16px;
+  background: linear-gradient(90deg, rgba(66,245,255,0.14), rgba(255,66,240,0.10));
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+}
+
+.ff-title{
+  font-size:36px;
+  letter-spacing:6px;
+  text-shadow:
+    0 0 14px rgba(66,245,255,0.35),
+    0 0 30px rgba(255,66,240,0.25);
+}
+.ff-sub{margin-top:6px;color:var(--muted);font-size:13px;letter-spacing:1px}
+
+.ff-screen{
+  position:relative;
+  border-radius:14px;
+  padding:18px;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35)),
+    radial-gradient(900px 450px at 50% 25%, rgba(66,245,255,0.10), transparent 60%),
+    var(--screen);
+  border: 1px solid rgba(255,255,255,0.12);
+  min-height: 520px;
+  overflow:hidden;
+}
+
+.ff-screen::before{
+  content:"";
+  position:absolute; inset:-20px;
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(255,255,255,0.05) 0px,
+    rgba(255,255,255,0.02) 2px,
+    rgba(0,0,0,0.02) 4px
+  );
+  opacity:0.20;
+  pointer-events:none;
+}
+.ff-screen::after{
+  content:"";
+  position:absolute; inset:0;
+  background: radial-gradient(700px 400px at 50% 30%, rgba(255,255,255,0.08), transparent 60%);
+  opacity:0.6;
+  pointer-events:none;
+}
+
+.ff-hud{display:flex; gap:14px; justify-content:space-between; position:relative; z-index:1}
+.ff-hudItem{flex:1; padding:10px 12px; border-radius:12px; background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.09)}
+.ff-hudLabel{font-size:11px; letter-spacing:2px; color:var(--muted)}
+.ff-hudValue{font-size:20px; margin-top:6px; text-shadow: 0 0 14px rgba(66,245,255,0.25)}
+.ff-time{color: var(--neon3); text-shadow: 0 0 12px rgba(255,232,74,0.25)}
+
+.ff-letterWrap{display:flex; align-items:center; justify-content:center; height:280px; position:relative; z-index:1}
+.ff-letter{
+  font-size:200px;
+  line-height:1;
+  letter-spacing:10px;
+  color: var(--neon);
+  text-shadow:
+    0 0 10px rgba(66,245,255,0.35),
+    0 0 50px rgba(66,245,255,0.25),
+    0 0 90px rgba(255,66,240,0.18);
+  filter: drop-shadow(0 12px 0 rgba(0,0,0,0.35));
+}
+
+.ff-message{position:relative; z-index:1; text-align:center; font-size:18px; letter-spacing:2px; margin-top:4px; color: var(--text)}
+.ff-tip{position:relative; z-index:1; text-align:center; margin-top:10px; font-size:12px; color: rgba(154,214,255,0.85); letter-spacing:1px}
+
+.ff-finish{position:relative; z-index:1; text-align:center; padding:18px 0 10px}
+.ff-finishTitle{color:var(--muted); font-size:12px; letter-spacing:3px}
+.ff-finishTime{font-size:64px; color:var(--neon3); text-shadow: 0 0 18px rgba(255,232,74,0.25); margin-top:8px}
+
+.ff-initialsPanel{margin-top:10px}
+.ff-initialsPrompt{font-size:12px; letter-spacing:2px; color: var(--ok)}
+.ff-initialsBox{
+  margin:12px auto 0;
+  width:220px;
+  padding:12px 14px;
+  border-radius:12px;
+  background: rgba(0,0,0,0.38);
+  border: 1px solid rgba(255,255,255,0.12);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+.ff-initialsText{font-size:32px; letter-spacing:10px; color: var(--neon2); text-shadow: 0 0 16px rgba(255,66,240,0.22)}
+.ff-caret{width:10px; height:28px; background: rgba(255,255,255,0.8); animation: blink 0.85s step-end infinite; border-radius:2px}
+.ff-initialsHint{margin-top:8px; font-size:11px; letter-spacing:1px; color: rgba(154,214,255,0.85)}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.ff-leaderboard{position:relative; z-index:1; margin-top:18px; padding:14px; border-radius:12px; background: rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.10)}
+.ff-boardTitle{font-size:14px; letter-spacing:4px; color: var(--neon); text-shadow: 0 0 16px rgba(66,245,255,0.22)}
+.ff-boardList{list-style:none; padding:0; margin:12px 0 0; display:flex; flex-direction:column; gap:8px}
+.ff-boardRow{display:grid; grid-template-columns: 52px 1fr 110px; gap:10px; align-items:center; padding:8px 10px; border-radius:10px; background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.06)}
+.ff-rank{color: rgba(154,214,255,0.9)}
+.ff-initials{color: var(--text); letter-spacing:3px}
+.ff-score{color: var(--neon3); text-align:right}
+
+.ff-footer{padding:14px 10px 6px}
+.ff-footerLine{color: rgba(154,214,255,0.75); font-size:11px; letter-spacing:2px; text-align:center}
+
+@media (max-width: 640px){
+  .ff-title{font-size:26px; letter-spacing:4px}
+  .ff-letter{font-size:150px}
+  .ff-screen{min-height: 560px}
+}

@@ -1,0 +1,12 @@
+--extra-index-url https://pypi.fury.io/ericmichael/
+
+# Core dependencies
+omniagents[all]>=0.6.6
+markitdown[docx]>=0.1.1
+python-dotenv
+
+# Professor dependencies
+# ipywidgets>=7.6.0
+# notebook>=7.0.0
+# jupyterlab>=4.1.2
+# jupyterlab-rise

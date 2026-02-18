@@ -61,3 +61,10 @@ Thumbs.db
 # =========================
 *.tmp
 *.bak
+
+# =========================
+# Personal files
+# =========================
+ClassWork/labs-1-2/examples/lab2/fridge_own.jpg
+ClassWork/labs-1-2/examples/lab2/meat.jpg
+ClassWork/labs-1-2/examples/lab2/seasoning.jpg
